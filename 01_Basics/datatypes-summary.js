@@ -41,3 +41,30 @@ console.log(typeof bigNumber)
    BigInt               "bigint"
    String               "string"
    Symbol                "symbol" */
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//Stack(Primitive), Heap(Non-Primitive)
+
+//call by value - primitive
+let myYoutubename = "shivanirajpooot"
+
+let anothername = myYoutubename
+anothername = "chaiaursamosa"
+
+console.log(myYoutubename)
+console.log(anothername)
+
+//call by reference - non-primitive
+let userOne = {
+    email :  "user@gmail.com",
+    upi : "user@ybl"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "shivani@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
